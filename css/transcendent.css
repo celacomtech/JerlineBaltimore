@@ -1,0 +1,18 @@
+.bg-dark {
+  background-color: #01c7fd !important;
+}
+.bg-green {
+    background-color: #99fbee !important;
+}
+.bg-moneygreen {
+    background-color: #19ba0c;
+}
+
+.btn-primary {
+    background-color: #99fbee;
+    color:black;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
