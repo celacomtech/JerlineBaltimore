@@ -6,21 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>JBaltimore | Energy Healing - Psychotherapist Energy Practioner and Tarot Reader</title>
+    <title>JBaltimore | Energy Healing - Psychotherapist Energy Practitioner and Tarot Reader</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- Client Branding -->
     <link href="css/transcendent.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1 class="text-center text-uppercase font-weight-light" style="padding:0">
+    <h1 class="text-center text-uppercase font-weight-light d-none d-lg-block" style="padding:0">
         <a href="index.html" style="text-decoration:none;color:black">Jerline Baltimore, LCSW-QS</a>
     </h1>
     <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid" style="padding-bottom:0px;color:black">
+        <div class="container-fluid" style="padding-bottom:40px;color:black">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,22 +34,44 @@
                     <li class="nav-item">
                         <a class="nav-link text-uppercase font-weight-bold" href="contact.html" title="Contact">Contact</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase font-weight-bold" data-toggle="modal" data-target="#therapyModal" title="Therapy Services">Therapy Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase font-weight-bold" href="supervision.html" title="Clinical Supervision">Clinical Supervison</a>
+                    <!--<li class="nav-item">
+                        <a class="nav-link text-uppercase font-weight-bold" data-toggle="modal" data-target="#therapyModal" title="Services">Services</a>
+                    </li>-->
+                    <!--<li class="nav-item">
+                        <a class="nav-link text-uppercase font-weight-bold" href="supervision.html" title="Clinical Supervision">Clinical Supervision</a>
+                    </li>-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase font-weight-bold" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Clinical Supervision">Services</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" data-toggle="modal" data-target="#therapyModal" title="Private Therapy">Private Therapy</a>
+                            <a class="dropdown-item" href="supervision.html" title="Clinical Supervision">Clinical Supervision</a>
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-uppercase font-weight-bold bg-green" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Therapy Tools</a>
+                        <a class="nav-link dropdown-toggle text-uppercase font-weight-bold" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Clinical Supervision">Students</a>
                         <div class="dropdown-menu">
-                            <!--<a class="dropdown-item" href="#">Client Portal</a>-->
-                            <a class="dropdown-item" href="#">Enter Video Session</a>
-                            <a class="dropdown-item" href="#">Forms</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item active" href="#">Community Resources <span class="sr-only">(current)</span></a>
-                            <a class="dropdown-item" href="professionalResources.html" title="">Professionl Resources</a>
-                            <a class="dropdown-item" href="#mymodal" data-remote="https://www.therapyportal.com/p/jerline/login/" data-toggle="modal" data-target="#mymodal" title="Privacy Policy">Privacy Policy</a>
+                            <!--<a class="dropdown-item" href="supervision.html" title="Clinical Supervision">Clinical Supervision</a>-->
+                            <a class="dropdown-item" href="forms.html" title="Forms">Forms</a>
+
+                            <div class="dropdown-divider">Pay Now</div>
+
+                            <a class="dropdown-item" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jerlinebaltimore/individual'});return false;">Schedule & PAY NOW <small> (INDIVIDUAL)</small></a>
+                            <a class="dropdown-item" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jerlinebaltimore/group'});return false;">Schedule & PAY NOW <small>(GROUP)</small></a>
+                            <!--<a class="dropdown-item" href="#mymodal" data-remote="https://www.therapyportal.com/p/jerline/login/" data-toggle="modal" data-target="#mymodal" title="Privacy Policy">Privacy Policy</a>-->
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase font-weight-bold" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Resources">Resources</a>
+                        <div class="dropdown-menu">
+                            <!--<a class="dropdown-item" href="https://www.therapyportal.com/p/jerline/login/"target="_blank"title="Client Portal">Client Portal</a>-->
+                            <!--Once Therapy sessions go live activate video session link below-->
+                            <!--<a class="dropdown-item" href="videosession.html" title="Video Sessions">Enter Video Session</a>-->
+                            <!--<a class="dropdown-item" href="forms.html" title="Forms">Forms</a>-->
+                            <!--<div class="dropdown-divider"></div>-->
+                            <a class="dropdown-item active" href="communityResources.html" title="">Community<span class="sr-only">(current)</span></a>
+                            <a class="dropdown-item" href="professionalResources.html" title="">Professional</a>
                             <!--<a class="dropdown-item" href="#">FAQs</a>-->
                         </div>
                     </li>
@@ -56,10 +80,14 @@
             </div>
         </div>
     </nav>
+    <h5 class="text-center text-uppercase font-weight-light d-lg-none" style="padding:0">
+        <a href="index.html" style="text-decoration:none;color:black">Jerline Baltimore <small>LCSW-QS</small></a>
+    </h5>
+
     <!--<div class="container">-->
     <!--<hr>
     <hr>-->
-    <legend class="text-center text-uppercase text-secondary bg-light font-weight-bold" title="Community Resources">Community Resources</legend>
+    <h5 class="text-center text-uppercase text-secondary bg-light font-weight-bold" title="Community Resources">Community Resources</h5>
     <!--<hr>-->
     <div class="container-fluid text-center">
         <!--<p>
@@ -177,8 +205,9 @@
             </div>
         </div>
     </div>
-
-    <hr>
+    <!--<hr class="bg-danger">
+    <h2 class="text-center text-uppercase bg-light"style="padding:10px">Daily Inspiration</h2>
+    <hr  class="bg-danger">-->
     <div class="modal" id="mymodal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -191,7 +220,7 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-lg-6">  <iframe src="documents/privacy.html" width="400" height="200"></iframe></div>
-                        <div class="col-lg-6"><img class="img-thumbnail" height="15" src="images/AdobeStock_97228711_Preview.jpeg" /></div>
+                        <div class="col-lg-6"><img class="img-thumbnail" height="15" src="images/privacyPolicy.jpg" /></div>
 
                     </div>
                 </div>
@@ -207,41 +236,63 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title font-weight-bold">Privacy Policy</h5>
+                    <h5 class="modal-title font-weight-bold">Private Therapy</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-lg-6">Coming Soon!  We are working on some new projects to enhance your experience.  See you this upcoming spring!</div>
-                        <div class="col-lg-6"><img class="img-thumbnail" height="15" src="images/construction.png" /></div>
+                        <div class="col-lg-8">Coming Soon!  We are working on some new projects to enhance your experience.  See you this upcoming spring!</div>
+                        <div class="col-lg-4"><img class="img-thumbnail img-responsive" src="images/therapyServices.jpg " /></div>
 
                     </div>
                 </div>
                 <div class="modal-footer">
+                    <a href="contact.html" class="btn btn-danger" >Learn More</a>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
     <!--<hr>-->
-    <div class="text-center text-uppercase">
-        <h5>Follow Me On Social Media</h5>
-        <a href="https://www.facebook.com/mejerlinebe" target="_blank"><img class="" src="images/facebookicon.png" height="55" title="Facebook" /></a>
-        <a href="https://www.instagram.com/mejerlinebe/" target="_blank"><img class="" src="images/instagramicon.png" height="55" title="Instagram" /></a>
-        <a href="https://youtube.com/channel/UCz3ICRDA-wVAb6a9Bzlrf3w" target="_blank"><img class="" src="images/youtubeicon.png" height="55" title="Youtube" /></a>
-        <a href="https://twitter.com/mejerlinebe" target="_blank"><img class="" src="images/twittericon.png" height="55" title="Twitter" /></a>
-        <a href="https://www.pinterest.com/mejerlinebe/_saved/" target="_blank"><img class="" src="images/pinteresticon.png" height="55" title="Pinterest" /></a>
-        <a href="https://www.linkedin.com/in/jerlinebaltimore/" target="_blank"><img class="" src="images/linkedinicon.png" height="55" title="LinkedIn" /></a>
-        <a href="mailto:jerlinebaltimore@gmail.com"><img class="" src="images/emailicon.png" height="55" title="email me" /></a>
-    </div>
+    <div class="text-center text-uppercase d-none d-lg-block">
+                    <h5>Follow Me On Social Media</h5>
+                    <a href="https://www.facebook.com/mejerlinebe" target="_blank"><img class="" src="images/facebookicon.png" height="55" title="Facebook" /></a>
+                    <a href="https://www.instagram.com/mejerlinebe/" target="_blank"><img class="" src="images/instagramicon.png" height="55" title="Instagram" /></a>
+                    <a href="https://youtube.com/channel/UCz3ICRDA-wVAb6a9Bzlrf3w" target="_blank"><img class="" src="images/youtubeicon.png" height="55" title="Youtube" /></a>
+                    <a href="https://twitter.com/mejerlinebe" target="_blank"><img class="" src="images/twittericon.png" height="55" title="Twitter" /></a>
+                    <a href="https://www.pinterest.com/mejerlinebe/_saved/" target="_blank"><img class="" src="images/pinteresticon.png" height="55" title="Pinterest" /></a>
+                    <a href="https://www.linkedin.com/in/jerlinebaltimore/" target="_blank"><img class="" src="images/linkedinicon.png" height="55" title="LinkedIn" /></a>
+                    <a href="mailto:jerlinebaltimore@gmail.com"><img class="" src="images/emailicon.png" height="55" title="email me" /></a>
+                </div>
+	<div class="text-center text-uppercase d-lg-none">
+                    <h6>Follow Me On Social Media</h6>
+                    <a href="https://www.facebook.com/mejerlinebe" target="_blank"><img class="" src="images/facebookicon.png" height="25" title="Facebook" /></a>
+                    <a href="https://www.instagram.com/mejerlinebe/" target="_blank"><img class="" src="images/instagramicon.png" height="25" title="Instagram" /></a>
+                    <a href="https://youtube.com/channel/UCz3ICRDA-wVAb6a9Bzlrf3w" target="_blank"><img class="" src="images/youtubeicon.png" height="25" title="Youtube" /></a>
+                    <a href="https://twitter.com/mejerlinebe" target="_blank"><img class="" src="images/twittericon.png" height="25" title="Twitter" /></a>
+                    <a href="https://www.pinterest.com/mejerlinebe/_saved/" target="_blank"><img class="" src="images/pinteresticon.png" height="25" title="Pinterest" /></a>
+                    <a href="https://www.linkedin.com/in/jerlinebaltimore/" target="_blank"><img class="" src="images/linkedinicon.png" height="25" title="LinkedIn" /></a>
+                    <a href="mailto:jerlinebaltimore@gmail.com"><img class="" src="images/emailicon.png" height="25" title="email me" /></a>
+                </div>
     <hr>
 
     <footer class="text-center bg-light">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-12 ">
+                <div class="col-md-12 small d-lg-none" style="padding-top:10px;">
+                    <p>
+                        &copy;
+                        <script>
+                            var CurrentYear = new Date().getFullYear()
+                            document.write(CurrentYear)
+                        </script>
+                        All rights reserved.<br /><b>Jerline Baltimore</b> <br />SWDC LLC.
+                    </p>
+                    <a href="http://www.celacomtechnologies.com" style="text-decoration: none;color: orange" target="new" title="Celacom Technologies"><img src="images/celacom.png" width="35px"></a>
+                </div>
+                <div class="col-md-12 d-none d-lg-block" style="padding-top:10px;">
                     <p>
                         &copy;
                         <script>
@@ -255,12 +306,13 @@
             </div>
         </div>
     </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--jQuery(necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap-4.4.1.js"></script>
     <script src="js/jquery.instagramFeed.js"></script>
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
     <script type="text/javascript">
     </script>
 </body>
