@@ -15,13 +15,57 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <!-- Calendly link widget begin -->
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <style>
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .header1 {
+            width: 100%;
+            text-align: center;
+        }
+
+        .header2 {
+            background-image: url(images/aboutimage.png);
+            height: 400px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .supervison {
+            width: 100%;
+            text-align: center;
+        }
+
+        .about {
+            background-color: lightgray;
+            background-size: cover;
+        }
+
+        .footer {
+            background-color: darkgray;
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body>
-    <h1 class="text-center text-uppercase font-weight-light d-none d-lg-block" style="padding:0">
+    <!--<h1 class="text-center text-uppercase font-weight-light d-none d-lg-block" style="padding:0">
         <a href="index.html" style="text-decoration:none;color:black">Jerline Baltimore, LCSW-QS</a>
-    </h1>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    </h1>-->
+    <!--<nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid" style="padding-bottom:40px;color:black">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,12 +78,16 @@
                     <li class="nav-item">
                         <a class="nav-link text-uppercase font-weight-bold" href="contact.html" title="Contact">Contact</a>
                     </li>
-                    <!--<li class="nav-item">
-                        <a class="nav-link text-uppercase font-weight-bold" data-toggle="modal" data-target="#therapyModal" title="Services">Services</a>
-                    </li>-->
-                    <!--<li class="nav-item">
-                        <a class="nav-link text-uppercase font-weight-bold" href="supervision.html" title="Clinical Supervision">Clinical Supervision</a>
-                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase font-weight-bold" target="blank" href="http://jerlinebaltimore.com/forms/allForms.pdf">Forms</a>
+                    </li>
+
+                    <li class="nav-item">
+        <a class="nav-link text-uppercase font-weight-bold" data-toggle="modal" data-target="#therapyModal" title="Services">Services</a>
+    </li>
+                    <li class="nav-item">
+        <a class="nav-link text-uppercase font-weight-bold" href="supervision.html" title="Clinical Supervision">Clinical Supervision</a>
+    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-uppercase font-weight-bold" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Clinical Supervision">Services</a>
                         <div class="dropdown-menu">
@@ -48,38 +96,20 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-uppercase font-weight-bold" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Clinical Supervision">Interns</a>
-                        <div class="dropdown-menu">
-                            <!--<a class="dropdown-item" href="supervision.html" title="Clinical Supervision">Clinical Supervision</a>-->
-                            <a class="dropdown-item" href="forms.html" title="Forms">Forms</a>
-
-                            <div class="dropdown-divider">Pay Now</div>
-
-                            <a class="dropdown-item" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jerlinebaltimore/individual'});return false;">Schedule & PAY NOW <small> (INDIVIDUAL)</small></a>
-                            <a class="dropdown-item" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jerlinebaltimore/group'});return false;">Schedule & PAY NOW <small>(GROUP)</small></a>
-                            <!--<a class="dropdown-item" href="#mymodal" data-remote="https://www.therapyportal.com/p/jerline/login/" data-toggle="modal" data-target="#mymodal" title="Privacy Policy">Privacy Policy</a>-->
-
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-uppercase font-weight-bold" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Resources">Resources</a>
                         <div class="dropdown-menu">
-                            <!--<a class="dropdown-item" href="https://www.therapyportal.com/p/jerline/login/"target="_blank"title="Client Portal">Client Portal</a>-->
-                            <!--Once Therapy sessions go live activate video session link below-->
-                            <!--<a class="dropdown-item" href="videosession.html" title="Video Sessions">Enter Video Session</a>-->
-                            <!--<a class="dropdown-item" href="forms.html" title="Forms">Forms</a>-->
-                            <!--<div class="dropdown-divider"></div>-->
                             <a class="dropdown-item" href="communityResources.html" title="">Community</a>
                             <a class="dropdown-item" href="professionalResources.html" title="">Professional</a>
-                            <!--<a class="dropdown-item" href="#">FAQs</a>-->
                         </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase font-weight-bold bg-green" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jerlinebaltimore'});return false;">Schedule NOW</a>
                     </li>
 
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav>-->
     <h5 class="text-center text-uppercase font-weight-light d-lg-none" style="padding:0">
         <a href="index.html" style="text-decoration:none;color:black">Jerline Baltimore <small>LCSW-QS</small></a>
     </h5>
@@ -244,11 +274,10 @@
         <br />
         <div class="row">
             <div class="col-lg-7">
-                <div class="data-toggle=" collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" ">
-                    <div class="list-group-item list-group-item-action active" aria-current="true">
+                <div class=""data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <!--<div class="list-group-item list-group-item-action active" aria-current="true">
                         <b>Let's Get Started</b>
-                        <!--Services <a href="https://www.facebook.com/mejerlinebe/services" target="_blank">Book</a>-->
-                    </div>
+                    </div>-->
                     <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <h5>Free 15 min Consultation Session</h5>
                         <p>Are you the type of person that needs to actually meet someone to know you feel about them? I know finding our first if we are a good fit will help you know if you are making the right choice. That’s why you can schedule a 15-minute consult to ask any question you might have about cost, requirements, and to dive into getting to know one another. </p>
@@ -371,35 +400,55 @@
             <a href="mailto:jerlinebaltimore@gmail.com"><img class="" src="images/emailicon.png" height="25" title="email me" /></a>
         </div>
         <hr>
-
-        <footer class="text-center bg-light">
-            <div class="container-fluid">
+        <div class="container-fluid footer" style="padding:25px">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-12 small d-lg-none" style="padding-top:10px;">
+                    <div class="col-6">
                         <p>
-                            &copy;
-                            <script>
-                                var CurrentYear = new Date().getFullYear()
-                                document.write(CurrentYear)
-                            </script>
-                            All rights reserved.<br /><b>Jerline Baltimore</b> <br />SWDC LLC.
+                            Jerline Baltimore LCSW-QS<br>
+                            <!--000-000-0000<br />-->
+                            jerlinebaltimore@gmail.com
                         </p>
-                        <a href="http://www.celacomtechnologies.com" style="text-decoration: none;color: orange" target="new" title="Celacom Technologies"><img src="images/celacom.png" width="35px"></a>
                     </div>
-                    <div class="col-md-12 d-none d-lg-block" style="padding-top:10px;">
+                    <div class="col-6">
                         <p>
-                            &copy;
-                            <script>
-                                var CurrentYear = new Date().getFullYear()
-                                document.write(CurrentYear)
-                            </script>
-                            All rights reserved.Site in Joint - Ownership with Social Work Development Center, LLC.
+                            Proving Clinical Social Work Supervision in Florida. Jerline Baltimore is a licensed clinical social worker, psychotherapist, energy practitioner, LCSW, health care advocate, and advocate for children and adults with disabilities.
                         </p>
-                        <a href="http://www.celacomtechnologies.com" style="text-decoration: none;color: orange" target="new" title="Celacom Technologies"><img src="images/celacom.png" width="35px"></a>
                     </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        <!--<footer class="text-center bg-light">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 small d-lg-none" style="padding-top:10px;">
+                    <p>
+                        &copy;
+                        <script>
+                            var CurrentYear = new Date().getFullYear()
+                            document.write(CurrentYear)
+                        </script>
+                        All rights reserved.<br /><b>Jerline Baltimore</b> <br />SWDC LLC.
+                    </p>
+                    <a href="http://www.celacomtechnologies.com" style="text-decoration: none;color: orange" target="new" title="Celacom Technologies"><img src="images/celacom.png" width="35px"></a>
+                </div>
+                <div class="col-md-12 d-none d-lg-block" style="padding-top:10px;">
+                    <p>
+                        &copy;
+                        <script>
+                            var CurrentYear = new Date().getFullYear()
+                            document.write(CurrentYear)
+                        </script>
+                        All rights reserved.Site in Joint - Ownership with Social Work Development Center, LLC.
+                    </p>
+                    <a href="http://www.celacomtechnologies.com" style="text-decoration: none;color: orange" target="new" title="Celacom Technologies"><img src="images/celacom.png" width="35px"></a>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>-->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="js/jquery-3.4.1.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
