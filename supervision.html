@@ -15,7 +15,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <!-- Calendly link widget begin -->
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <style>
+        .bg-dark {
+            background-color: #01c7fd !important;
+        }
+
+        .btn-dark {
+            background-color: #01c7fd !important;
+        }
 
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -32,31 +41,45 @@
         }
 
         .header1 {
+            height: 400px;
             width: 100%;
             text-align: center;
+            padding: 70px 0;
+            font-family: minvera-modern;
         }
 
         .header2 {
-            background-image: url(images/aboutimage.png);
+            background-image: url(images/IMG_6572.jpg);
+            /*background-image: url(images/aboutimage.png);*/
             height: 400px;
             width: 100%;
             background-repeat: no-repeat;
             background-size: cover;
+            /*margin:155px;*/
         }
 
         .supervison {
             width: 100%;
             text-align: center;
+            /*background-color:white;*/
+            height: 400px;
+            padding: 70px 0;
+            font-family: minvera-modern;
         }
 
         .about {
-            background-color: lightgray;
+            font-family: minerva-modern;
+            background-color: #eee;
             background-size: cover;
+            /*height: 400px;*/
+            padding: 70px 0;
         }
 
         .footer {
-            background-color: darkgray;
+            background-color: #444;
             background-size: cover;
+            color: white;
+            font-family: minvera-modern;
         }
     </style>
 </head>
@@ -110,12 +133,23 @@
             </div>
         </div>
     </nav>-->
-    <h5 class="text-center text-uppercase font-weight-light d-lg-none" style="padding:0">
+    <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <p class="h5 my-0 me-md-auto fw-normal"><a href="index.html" style="text-decoration:none;color:black">JERLINE BALTIMORE, LCSW-QS</a></p>
+        <nav class="my-2 my-md-0 me-md-3">
+            <a class="p-2 text-dark text-uppercase" href="advocacy.html" style="text-decoration:none">Advocacy</a>
+            <a class="p-2 text-dark text-uppercase active" href="supervision.html" style="text-decoration:none">LCSW SUPERVISION</a>
+            <a class="p-2 text-dark text-uppercase" href="about.html" style="text-decoration:none">ABOUT</a>
+            <a class="p-2 text-dark text-uppercase" href="http://jerlinebaltimore.com/forms/allForms.pdf" target="_blank" style="text-decoration:none">FORMS</a>
+            <a class="p-2 text-dark text-uppercase" href="mailto:jerline.baltimore@gmail.com?subject=Mail from web site" style="text-decoration:none">CONTACT</a>
+        </nav>
+        <!--<a class="btn btn-outline-primary" href="#">Sign up</a>-->
+    </header>
+
+    <!--<h5 class="text-center text-uppercase font-weight-light d-lg-none" style="padding:0">
         <a href="index.html" style="text-decoration:none;color:black">Jerline Baltimore <small>LCSW-QS</small></a>
-    </h5>
+    </h5>-->
 
     <div class="container-fluid">
-        <h5 class="text-center text-uppercase text-secondary bg-light font-weight-bold" title="Clinical Supervision">Clinical Supervision</h5>
         <div class="accordion" id="accordionExample">
             <div class="card">
                 <div class="card-header" id="headingOne">
@@ -272,140 +306,14 @@
             </div>
         </div>
         <br />
-        <div class="row">
-            <div class="col-lg-7">
-                <div class=""data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <!--<div class="list-group-item list-group-item-action active" aria-current="true">
-                        <b>Let's Get Started</b>
-                    </div>-->
-                    <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <h5>Free 15 min Consultation Session</h5>
-                        <p>Are you the type of person that needs to actually meet someone to know you feel about them? I know finding our first if we are a good fit will help you know if you are making the right choice. That’s why you can schedule a 15-minute consult to ask any question you might have about cost, requirements, and to dive into getting to know one another. </p>
-                        <!--<span class="badge bg-primary rounded-pill bg-green">Get Started</span>-->
-                    </button>
-                    <button type="button" class="list-group-item list-group-item-action">
-                        <h5>Talk about Your Road Map for Licensure + Register</h5>
-                        <p>
-                            Ready to get licensed? If you’re interested in starting to accumulate your hours as a Registered Intern Clinical Social Worker (RCSWI). Let’s schedule time to discuss in more details what you need to complete the application including the letter sent to the Florida Board affirming I am now your clinical supervisor.
-                        </p>
-                        <!--<span class="badge bg-primary rounded-pill bg-green">Get Started</span>-->
-                    </button>
-                    <button type="button" class="list-group-item list-group-item-action">
-                        <h5>Individual Clinical Supervision Session</h5><p>
-                            Your supervision hour is a place to get curious about yourself, your clients, and the profession. In supervision we will cover all the topics important in the profession including: guidance on the DSM, exam preparation, discussion of legal/ethical scenarios, exploring areas of counter transference, and taking your clinical skills to another level.
-                        </p>
-                        <!--<span class="badge bg-primary rounded-pill bg-green">Get Started</span>-->
-                    </button>
-                    <button type="button" class="list-group-item list-group-item-action" disabled>
-                        <h5>Social Work On-Demand Coaching</h5>
-                        <p>
-                            Need someone to bound ideas with? Searching for answers on the next best approach in your career? Looking for someone to strategize and discuss your plan with? This on-demand options is available to MSWs and LCSWs who need to discuss challenges they are facing in the industry including job search.
-                        </p>
-                        <!--<span class="badge bg-primary rounded-pill bg-green">Get Started</span>-->
-                    </button>
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <img class="img-thumbnail img-fluid" src="images/clinicalSupervision.jpg" />
-                <p>
-                    COVID-19 Alert: Providing On-line Supervision Only
-                    On-line Supervision, Don’t Stress It, I got you!
-
-                    My priority is the safety of all us including our community. Because of this, I am primarily providing on-line supervision session during the mandated period of social distancing.
-                    I have been providing therapy on-line for years, so I am confident in the ability to do the same for your clinical supervision and ensure the quality of service and connection that you are looking for. In fact,  many people find this method to be more convenient and like it better!
-                </p>
-            </div>
-            <div class="col-lg-2">
-                <!---twitter feed-->
-                <!--<div class="overflow-auto ">
-                    <a class="twitter-timeline" href="https://twitter.com/mejerlinebe?ref_src=twsrc%5Etfw"></a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>-->
-            </div>
-            <hr>
-            <hr>
-
-        </div>
-    </div>
-    <!--<hr class="bg-danger">
-    <h2 class="text-center text-uppercase bg-light"style="padding:10px">Daily Inspiration</h2>
-    <hr  class="bg-danger">-->
-    <div class="modal" id="mymodal" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title font-weight-bold">Privacy Policy</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-6">  <iframe src="documents/privacy.html" width="400" height="200"></iframe></div>
-                        <div class="col-lg-6"><img class="img-thumbnail" height="15" src="images/privacyPolicy.jpg" /></div>
-
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
     </div>
 
-    <!-- Therapy Modal -->
-    <div class="modal" id="therapyModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title font-weight-bold">Private Therapy</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-8">Coming Soon!  We are working on some new projects to enhance your experience.  See you this upcoming spring!</div>
-                        <div class="col-lg-4"><img class="img-thumbnail img-responsive" src="images/therapyServices.jpg " /></div>
-
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <a href="contact.html" class="btn btn-danger">Learn More</a>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--<hr>-->
-    <div class="text-center text-uppercase d-none d-lg-block">
-        <h5>Follow Me On Social Media</h5>
-        <a href="https://www.facebook.com/mejerlinebe" target="_blank"><img class="" src="images/facebookicon.png" height="55" title="Facebook" /></a>
-        <a href="https://www.instagram.com/mejerlinebe/" target="_blank"><img class="" src="images/instagramicon.png" height="55" title="Instagram" /></a>
-        <a href="https://youtube.com/channel/UCz3ICRDA-wVAb6a9Bzlrf3w" target="_blank"><img class="" src="images/youtubeicon.png" height="55" title="Youtube" /></a>
-        <a href="https://twitter.com/mejerlinebe" target="_blank"><img class="" src="images/twittericon.png" height="55" title="Twitter" /></a>
-        <a href="https://www.pinterest.com/mejerlinebe/_saved/" target="_blank"><img class="" src="images/pinteresticon.png" height="55" title="Pinterest" /></a>
-        <a href="https://www.linkedin.com/in/jerlinebaltimore/" target="_blank"><img class="" src="images/linkedinicon.png" height="55" title="LinkedIn" /></a>
-        <a href="mailto:jerlinebaltimore@gmail.com"><img class="" src="images/emailicon.png" height="55" title="email me" /></a>
-    </div>
-    <div class="text-center text-uppercase">
-        <div class="text-center text-uppercase d-lg-none">
-            <h6>Follow Me On Social Media</h6>
-            <a href="https://www.facebook.com/mejerlinebe" target="_blank"><img class="" src="images/facebookicon.png" height="25" title="Facebook" /></a>
-            <a href="https://www.instagram.com/mejerlinebe/" target="_blank"><img class="" src="images/instagramicon.png" height="25" title="Instagram" /></a>
-            <a href="https://youtube.com/channel/UCz3ICRDA-wVAb6a9Bzlrf3w" target="_blank"><img class="" src="images/youtubeicon.png" height="25" title="Youtube" /></a>
-            <a href="https://twitter.com/mejerlinebe" target="_blank"><img class="" src="images/twittericon.png" height="25" title="Twitter" /></a>
-            <a href="https://www.pinterest.com/mejerlinebe/_saved/" target="_blank"><img class="" src="images/pinteresticon.png" height="25" title="Pinterest" /></a>
-            <a href="https://www.linkedin.com/in/jerlinebaltimore/" target="_blank"><img class="" src="images/linkedinicon.png" height="25" title="LinkedIn" /></a>
-            <a href="mailto:jerlinebaltimore@gmail.com"><img class="" src="images/emailicon.png" height="25" title="email me" /></a>
-        </div>
-        <hr>
         <div class="container-fluid footer" style="padding:25px">
             <div class="container">
                 <div class="row">
                     <div class="col-6">
                         <p>
-                            Jerline Baltimore LCSW-QS<br>
+                            Jerline Baltimore LCSW-QS<br />
                             <!--000-000-0000<br />-->
                             jerlinebaltimore@gmail.com
                         </p>
