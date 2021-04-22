@@ -8,89 +8,98 @@
 
     <title>JBaltimore | Energy Healing - Psychotherapist Energy Practitioner and Tarot Reader</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <!-- Client Branding -->
+    <title>LCSW Supervision in Miami - Jerline Baltimore LCSW</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/pricing/">
     <link href="css/transcendent.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-    <!-- Calendly link widget begin -->
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <style>
+        .bg-dark {
+            background-color: #0092ff !important;
+        }
+
+        .btn-dark {
+            /*background-color: #01c7fd !important;*/
+            background-color: #0092ff !important;
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .header1 {
+            height: 300px;
+            margin: auto;
+            width: 65%;
+            text-align: center;
+            padding: 70px 50px;
+            font-family: minvera-modern;
+        }
+
+        .header2 {
+            background-image: url(images/homeHeader.png);
+            /*background-image: url(images/aboutimage.png);*/
+            height: 400px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*margin:155px;*/
+        }
+
+        .supervison {
+            width: 100%;
+            text-align: center;
+            /*background-color:white;*/
+            height: 400px;
+            padding: 70px 0;
+            font-family: minvera-modern;
+        }
+
+        .about {
+            font-family: minerva-modern;
+            background-color: #eee;
+            background-size: cover;
+            /*height: 400px;*/
+            padding: 70px 0;
+        }
+
+        .footer {
+            background-color: #444;
+            background-size: cover;
+            color: white;
+            font-family: minvera-modern;
+        }
+    </style>
+
 </head>
 
 <body>
-    <h1 class="text-center text-uppercase font-weight-light d-none d-lg-block" style="padding:0">
-        <a href="index.html" style="text-decoration:none;color:black">Jerline Baltimore, LCSW-QS</a>
-    </h1>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid" style="padding-bottom:40px;color:black">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center order-2" id="navbarSupportedContent">
-                <ul class="navbar navbar-nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase font-weight-bold" href="index.html" title="Home">Home</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link text-uppercase font-weight-bold" href="contact.html" title="Contact">Contact <span class="sr-only">(current)</span></a>
-                    </li>
-                    <!--<li class="nav-item">
-                        <a class="nav-link text-uppercase font-weight-bold" data-toggle="modal" data-target="#therapyModal" title="Services">Services</a>
-                    </li>-->
-                    <!--<li class="nav-item">
-                        <a class="nav-link text-uppercase font-weight-bold" href="supervision.html" title="Clinical Supervision">Clinical Supervision</a>
-                    </li>-->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-uppercase font-weight-bold" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Clinical Supervision">Services</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" data-toggle="modal" data-target="#therapyModal" title="Private Therapy">Private Therapy</a>
-                            <a class="dropdown-item" href="supervision.html" title="Clinical Supervision">Clinical Supervision</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-uppercase font-weight-bold" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Clinical Supervision">Interns</a>
-                        <div class="dropdown-menu">
-                            <!--<a class="dropdown-item" href="supervision.html" title="Clinical Supervision">Clinical Supervision</a>-->
-                            <a class="dropdown-item" href="forms.html" title="Forms">Forms</a>
-
-                            <div class="dropdown-divider">Pay Now</div>
-
-                            <a class="dropdown-item" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jerlinebaltimore/individual'});return false;">Schedule & PAY NOW <small> (INDIVIDUAL)</small></a>
-                            <a class="dropdown-item" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jerlinebaltimore/group'});return false;">Schedule & PAY NOW <small>(GROUP)</small></a>
-                            <!--<a class="dropdown-item" href="#mymodal" data-remote="https://www.therapyportal.com/p/jerline/login/" data-toggle="modal" data-target="#mymodal" title="Privacy Policy">Privacy Policy</a>-->
-
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-uppercase font-weight-bold" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Resources">Resources</a>
-                        <div class="dropdown-menu">
-                            <!--<a class="dropdown-item" href="https://www.therapyportal.com/p/jerline/login/"target="_blank"title="Client Portal">Client Portal</a>-->
-                            <!--Once Therapy sessions go live activate video session link below-->
-                            <!--<a class="dropdown-item" href="videosession.html" title="Video Sessions">Enter Video Session</a>-->
-                            <!--<a class="dropdown-item" href="forms.html" title="Forms">Forms</a>-->
-                            <!--<div class="dropdown-divider"></div>-->
-                            <a class="dropdown-item" href="communityResources.html" title="">Community</a>
-                            <a class="dropdown-item" href="professionalResources.html" title="">Professional</a>
-                            <!--<a class="dropdown-item" href="#">FAQs</a>-->
-                        </div>
-                    </li>
-                    <!--use stripe to process payments
-                    roll out 1/6/21-->
-                    <!--<li class="nav-item">
-                        <a class="nav-link text-uppercase font-weight-bold"id="checkout-button" style="color:red;" >Pay Now</a>
-                    </li>-->
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <h5 class="text-center text-uppercase font-weight-light d-lg-none" style="padding:0">
-        <a href="index.html" style="text-decoration:none;color:black">Jerline Baltimore <small>LCSW-QS</small></a>
-    </h5>
+    <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <p class="h5 my-0 me-md-auto fw-normal"><a href="index.html" style="text-decoration:none;color:black">JERLINE BALTIMORE, LCSW-QS</a></p>
+        <nav class="my-2 my-md-0 me-md-3">
+            <a class="p-2 text-dark text-uppercase" href="advocacy.html" style="text-decoration:none">Advocacy</a>
+            <a class="p-2 text-dark text-uppercase" href="supervision.html" style="text-decoration:none">LCSW SUPERVISION</a>
+            <a class="p-2 text-dark text-uppercase" href="about.html" style="text-decoration:none">ABOUT</a>
+            <a class="p-2 text-dark text-uppercase" href="http://jerlinebaltimore.com/forms/allForms.pdf" target="_blank" style="text-decoration:none">FORMS</a>
+            <a class="p-2 text-dark text-uppercase" href="contact.html" style="text-decoration:none">CONTACT</a>
+            <a class="p-2 btn text-dark text-uppercase bg-green" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mejerlinebe'});return false;" style="text-decoration:none"><b>Schedule NOW</b></a>
+        </nav>
+    </header>
 
     <!--<div class="container">-->
     <!--<img class="container-fluid" src="images/pinkPurpleBanner.jpg" height="300" />-->
-    <h5 class="text-center text-uppercase text-secondary bg-light font-weight-bold" style="">Contact US </h5>
+    <!--<h5 class="text-center text-uppercase text-secondary bg-light font-weight-bold" style="">Contact US </h5>-->
     <!--<hr>-->
     <!--<h2 class="text-center text-uppercase">
         Need to vent?                <a href="https://twitter.com/intent/tweet?button_hashtag=mejerlinebe&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #mejerlinebe</a>
@@ -200,7 +209,7 @@
             </div>-->
         </div>
     </div>
-    <hr />
+    <!--<hr />-->
     <div class="modal" id="mymodal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -250,7 +259,7 @@
     </div>
     <!--<hr>-->
     <div class="text-center text-uppercase d-none d-lg-block">
-        <h5>Follow Me On Social Media</h5>
+        <!--<h5>Follow Me On Social Media</h5>-->
         <a href="https://www.facebook.com/mejerlinebe" target="_blank"><img class="" src="images/facebookicon.png" height="55" title="Facebook" /></a>
         <a href="https://www.instagram.com/mejerlinebe/" target="_blank"><img class="" src="images/instagramicon.png" height="55" title="Instagram" /></a>
         <a href="https://youtube.com/channel/UCz3ICRDA-wVAb6a9Bzlrf3w" target="_blank"><img class="" src="images/youtubeicon.png" height="55" title="Youtube" /></a>
@@ -260,7 +269,7 @@
         <a href="mailto:jerlinebaltimore@gmail.com"><img class="" src="images/emailicon.png" height="55" title="email me" /></a>
     </div>
     <div class="text-center text-uppercase d-lg-none">
-        <h6>Follow Me On Social Media</h6>
+        <!--<h6>Follow Me On Social Media</h6>-->
         <a href="https://www.facebook.com/mejerlinebe" target="_blank"><img class="" src="images/facebookicon.png" height="25" title="Facebook" /></a>
         <a href="https://www.instagram.com/mejerlinebe/" target="_blank"><img class="" src="images/instagramicon.png" height="25" title="Instagram" /></a>
         <a href="https://youtube.com/channel/UCz3ICRDA-wVAb6a9Bzlrf3w" target="_blank"><img class="" src="images/youtubeicon.png" height="25" title="Youtube" /></a>
@@ -269,7 +278,35 @@
         <a href="https://www.linkedin.com/in/jerlinebaltimore/" target="_blank"><img class="" src="images/linkedinicon.png" height="25" title="LinkedIn" /></a>
         <a href="mailto:jerlinebaltimore@gmail.com"><img class="" src="images/emailicon.png" height="25" title="email me" /></a>
     </div>
-    <hr>
+    <div class="container-fluid footer" style="padding:25px">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <p>
+                        Jerline Baltimore LCSW-QS<br />
+                        <!--000-000-0000<br />-->
+                        jerlinebaltimore@gmail.com
+                    </p>
+                </div>
+                <div class="col-3">
+                    <ul style="list-style-type:none">
+                        <li>
+                            <a class="p-2 text-white text-uppercase" href="supervisionFAQ.html" style="text-decoration:none"><small>FAQs</small></a>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <p>
+                        Providing Clinical Social Work Supervision in Florida. Jerline Baltimore is a licensed clinical social worker, psychotherapist, energy practitioner, LCSW, health care advocate, and advocate for children and adults with disabilities.
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
 
     <footer class="text-center bg-light">
         <div class="container-fluid">
@@ -308,7 +345,7 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
- <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
     <script type="text/javascript">
         $('#myModal').on('shown.bs.modal', function () {
             $('#myInput').trigger('focus')
